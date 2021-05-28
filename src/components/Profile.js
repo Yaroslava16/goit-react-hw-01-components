@@ -1,5 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Profile.css';
 
 const Profile = ({
   avatar,
@@ -10,26 +11,32 @@ const Profile = ({
   statsLikes,
   statsViews,
 }) => (
-  <div class="profile">
-    <div class="description">
-      <img src={avatar} alt={name} class="avatar" />
-      <p class="name">{name}</p>
-      <p class="tag">@{tag}</p>
-      <p class="location">{location}</p>
+  <div className="profile">
+    <div className="description">
+      <img
+        width="200px"
+        height="200px"
+        src={avatar}
+        alt={name}
+        className="avatar"
+      />
+      <p className="name">{name}</p>
+      <p className="tag">@{tag}</p>
+      <p className="location">{location}</p>
     </div>
 
-    <ul class="stats">
-      <li>
-        <span class="label">Followers</span>
-        <span class="quantity">{statsFollowers}</span>
+    <ul className="stats">
+      <li className="stats-item">
+        <span className="label">Followers</span>
+        <span className="quantity">{statsFollowers}</span>
       </li>
-      <li>
-        <span class="label">Views</span>
-        <span class="quantity">{statsViews}</span>
+      <li className="stats-item">
+        <span className="label">Views</span>
+        <span className="quantity">{statsViews}</span>
       </li>
-      <li>
-        <span class="label">Likes</span>
-        <span class="quantity">{statsLikes}</span>
+      <li className="stats-item">
+        <span className="label">Likes</span>
+        <span className="quantity">{statsLikes}</span>
       </li>
     </ul>
   </div>
