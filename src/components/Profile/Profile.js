@@ -11,32 +11,32 @@ const Profile = ({
   statsLikes,
   statsViews,
 }) => (
-  <div className="profile">
-    <div className="description">
+  <div className="Profile">
+    <div className="Description">
       <img
         width="200px"
         height="200px"
         src={avatar}
         alt={name}
-        className="avatar"
+        className="Avatar"
       />
-      <p className="name">{name}</p>
-      <p className="tag">@{tag}</p>
-      <p className="location">{location}</p>
+      <p className="Name">{name}</p>
+      <p className="Tag">@{tag}</p>
+      <p className="Location">{location}</p>
     </div>
 
-    <ul className="stats">
-      <li className="stats-item">
-        <span className="label">Followers</span>
-        <span className="quantity">{statsFollowers}</span>
+    <ul className="Stats">
+      <li className="Stats-item">
+        <span className="Label">Followers</span>
+        <span className="Quantity">{statsFollowers}</span>
       </li>
-      <li className="stats-item">
-        <span className="label">Views</span>
-        <span className="quantity">{statsViews}</span>
+      <li className="Stats-item">
+        <span className="Label">Views</span>
+        <span className="Quantity">{statsViews}</span>
       </li>
-      <li className="stats-item">
-        <span className="label">Likes</span>
-        <span className="quantity">{statsLikes}</span>
+      <li className="Stats-item">
+        <span className="Label">Likes</span>
+        <span className="Quantity">{statsLikes}</span>
       </li>
     </ul>
   </div>
