@@ -1,13 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+import styles from './FriendList.module.css';
 
 const FriendList = ({ friends }) => (
-  <ul class="friend-list">
+  <ul className={styles.friendList}>
     {friends.map(({ avatar, name, isOnline, id }) => (
-      <li key={id} class="item">
-        <span class="status"></span>
-        <img class="avatar" src={avatar} alt={name} width="48" />
-        <p class="name">{name}</p>
+      <li key={id} className={styles.item}>
+        <span className={isOnline ? styles.online : styles.offline}></span>
+        <img className={styles.avatar} src={avatar} alt={name} width="90" />
+        <p className={styles.name}>{name}</p>
       </li>
     ))}
   </ul>
@@ -20,7 +21,7 @@ FriendList.propTypes = {
       name: PropTypes.string.isRequired,
       id: PropTypes.number.isRequired,
       isOnline: PropTypes.bool.isRequired,
-    }).isRequired
+    }).isRequired,
   ).isRequired,
 };
 
