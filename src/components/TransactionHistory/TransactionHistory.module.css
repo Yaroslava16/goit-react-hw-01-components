@@ -1,0 +1,20 @@
+.transactionHistory {
+  width: 800px;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
+
+.tableTopString {
+  background-color: rgb(184, 238, 211);
+}
+
+.tableTitle,
+.tableContent {
+  padding: 3px;
+  border: 1px solid black;
+}
+
+.tableTitle {
+  text-transform: uppercase;
+}
